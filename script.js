@@ -36,6 +36,23 @@ function tournoi3Colonnes(){
 function afficherTournoi(){
     let nombreJoueur = document.getElementById("nombre_joueur").value;
     
+//    switch(nombreJoueur){
+//        case 4 :
+//            tournoi2Colonnes();
+//            for (var i=0; i<3; i++){
+//                document.getElementsByClassName("col")[12 + i].innerHTML = htmlBlockElement;
+//            }
+//            break;
+//        case 6:
+//            tournoi3Colonnes();
+//            for (var i=0; i<4; i++){
+//                document.getElementsByClassName("col")[14 + i].innerHTML = htmlBlockElement;
+//            }
+//            break;
+//        default:
+//             alert("vous devez inscrire un nombre entre 2 et 16");
+//    }
+    
     if(nombreJoueur == 4){
         tournoi2Colonnes();
         for (var i=0; i<3; i++){
@@ -77,6 +94,9 @@ function afficherTournoi(){
         for (var i=0; i<15; i++){
             document.getElementsByClassName("col")[i].innerHTML = htmlBlockElement;
         }
+    }
+    else {
+        alert("vous devez inscrire un nombre entre 2 et 16")
     }
 }
 
